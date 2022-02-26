@@ -30,7 +30,7 @@ export class AppComponent {
     searchParams = searchParams.append('uid', this.uid.toString());
     searchParams = searchParams.append('expiryTime', this.privilegeExpiredTs);
 
-    this.http.get<any>('http://localhost:8080/access-token', {
+    this.http.get<any>('https://abdul225.github.io/agorademo/access-token', {
       params: searchParams
     }).subscribe((response) => {
 
